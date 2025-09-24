@@ -1,0 +1,44 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#50c3f7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer circle -->
+  <circle cx="60" cy="60" r="55" fill="url(#logoGrad)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+
+  <!-- Inner network -->
+  <g transform="translate(60, 60)">
+    <!-- Central hub -->
+    <circle cx="0" cy="0" r="8" fill="white"/>
+
+    <!-- Connected nodes -->
+    <circle cx="-25" cy="-15" r="6" fill="rgba(255,255,255,0.9)"/>
+    <circle cx="25" cy="-15" r="6" fill="rgba(255,255,255,0.9)"/>
+    <circle cx="-25" cy="15" r="6" fill="rgba(255,255,255,0.9)"/>
+    <circle cx="25" cy="15" r="6" fill="rgba(255,255,255,0.9)"/>
+    <circle cx="0" cy="-30" r="6" fill="rgba(255,255,255,0.9)"/>
+    <circle cx="0" cy="30" r="6" fill="rgba(255,255,255,0.9)"/>
+
+    <!-- Connection lines -->
+    <line x1="0" y1="0" x2="-25" y2="-15" stroke="white" stroke-width="2" opacity="0.8"/>
+    <line x1="0" y1="0" x2="25" y2="-15" stroke="white" stroke-width="2" opacity="0.8"/>
+    <line x1="0" y1="0" x2="-25" y2="15" stroke="white" stroke-width="2" opacity="0.8"/>
+    <line x1="0" y1="0" x2="25" y2="15" stroke="white" stroke-width="2" opacity="0.8"/>
+    <line x1="0" y1="0" x2="0" y2="-30" stroke="white" stroke-width="2" opacity="0.8"/>
+    <line x1="0" y1="0" x2="0" y2="30" stroke="white" stroke-width="2" opacity="0.8"/>
+
+    <!-- IT icons in nodes -->
+    <text x="-25" y="-10" text-anchor="middle" fill="#4a90e2" font-size="8" font-weight="bold">S</text>
+    <text x="25" y="-10" text-anchor="middle" fill="#4a90e2" font-size="8" font-weight="bold">C</text>
+    <text x="-25" y="20" text-anchor="middle" fill="#4a90e2" font-size="8" font-weight="bold">D</text>
+    <text x="25" y="20" text-anchor="middle" fill="#4a90e2" font-size="8" font-weight="bold">N</text>
+    <text x="0" y="-25" text-anchor="middle" fill="#4a90e2" font-size="8" font-weight="bold">☁</text>
+    <text x="0" y="35" text-anchor="middle" fill="#4a90e2" font-size="8" font-weight="bold">🔧</text>
+  </g>
+
+  <!-- Community text -->
+  <text x="60" y="100" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">IT INFRA</text>
+</svg>
